@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test sum</title>
+</head>
+<body>
+  <h1>Additionneur</h1>
+  <input id="a" type="number" placeholder="Nombre A" />
+  <input id="b" type="number" placeholder="Nombre B" />
+  <button id="btn">Additionner</button>
+  <p>Résultat : <span id="result"></span></p>
+
+  <script type="module">
+    import { sum } from './index.js';
+
+    document.getElementById('btn').addEventListener('click', () => {
+      const a = Number(document.getElementById('a').value);
+      const b = Number(document.getElementById('b').value);
+      const result = sum(a, b);
+      document.getElementById('result').textContent = result;
+    });
+  </script>
+</body>
+</html>
