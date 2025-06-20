@@ -1,7 +1,7 @@
-const { test, expect } = require('@playwright/test');
+// tests/e2e/sum.e2e.test.js
+import { test, expect } from '@playwright/test';
 
-test('Simple Playwright E2E test', async ({ page }) => {
-  // Exemple de test HTML local simulant sum
+test('Addition simulée dans une page HTML', async ({ page }) => {
   await page.setContent(`
     <html>
       <body>

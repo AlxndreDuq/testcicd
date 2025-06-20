@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
     "lint": "eslint .",
-    "test:e2e": "playwright test",
+    "test": "jest tests/unit",
+    "test:e2e": "playwright test tests/e2e",
     "build": "echo 'pas besoin de build'"
   },
   "repository": {
@@ -24,5 +24,8 @@
     "eslint": "^9.29.0",
     "jest": "^30.0.2",
     "playwright": "^1.53.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.1"
   }
 }
