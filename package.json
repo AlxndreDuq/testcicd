@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "build": "echo 'pas besoin de build'"
   },
   "repository": {
     "type": "git",
