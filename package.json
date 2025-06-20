@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint .",
+    "test:e2e": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   "homepage": "https://github.com/AlxndreDuq/testcicd#readme",
   "description": "",
   "dependencies": {
-    "jest": "^30.0.2"
+    "eslint": "^9.29.0",
+    "jest": "^30.0.2",
+    "playwright": "^1.53.1"
   }
 }
